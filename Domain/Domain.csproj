@@ -9,10 +9,12 @@
   <ItemGroup>
     <None Remove="Primitives\" />
     <None Remove="ValueObjects\" />
+    <None Remove="Customers\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Primitives\" />
     <Folder Include="ValueObjects\" />
+    <Folder Include="Customers\" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="MediatR" Version="12.1.1" />
