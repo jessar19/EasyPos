@@ -15,6 +15,7 @@
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
       <PrivateAssets>all</PrivateAssets>
     </PackageReference>
+    <PackageReference Include="ErrorOr" Version="1.2.1" />
   </ItemGroup>
 
   <ItemGroup>
@@ -24,8 +25,14 @@
 
   <ItemGroup>
     <None Remove="Extensions\" />
+    <None Remove="Common\" />
+    <None Remove="Common\Errors\" />
+    <None Remove="Common\Http\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Extensions\" />
+    <Folder Include="Common\" />
+    <Folder Include="Common\Errors\" />
+    <Folder Include="Common\Http\" />
   </ItemGroup>
 </Project>
