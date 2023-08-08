@@ -34,7 +34,7 @@ namespace Application.Customers.Create
                 }
 
                 var customer = new Customer(
-                    new CustomerId(new Guid()),
+                    new CustomerId(Guid.NewGuid()),
                     command.Name,
                     command.LasName,
                     command.Email,
