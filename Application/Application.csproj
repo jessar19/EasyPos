@@ -19,6 +19,8 @@
     <None Remove="Customers\Create\" />
     <None Remove="Customers\GetById\" />
     <None Remove="Customers\GetAll\" />
+    <None Remove="Common\" />
+    <None Remove="Common\Behaviors\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Data\" />
@@ -28,6 +30,8 @@
     <Folder Include="Customers\Create\" />
     <Folder Include="Customers\GetById\" />
     <Folder Include="Customers\GetAll\" />
+    <Folder Include="Common\" />
+    <Folder Include="Common\Behaviors\" />
   </ItemGroup>
   <PropertyGroup>
     <TargetFramework>net7.0</TargetFramework>
