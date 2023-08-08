@@ -1,8 +1,10 @@
-﻿using Domain.Primitives;
+﻿using System.ComponentModel.DataAnnotations.Schema;
+using Domain.Primitives;
 using Domain.ValueObjects;
 
 namespace Domain.Customers
 {
+    [Table("Customers")]
 	public sealed class Customer : AggregateRoot
 	{
         public Customer(CustomerId id, string name, string lastName, string email, PhoneNumber phoneNumber, Address address, bool active)
@@ -13,7 +15,7 @@ namespace Domain.Customers
             Email = email;
             PhoneNumber = phoneNumber;
             Address = address;
-            this.active = active;
+            this.Active = active;
         }
 
         private Customer()
@@ -35,7 +37,7 @@ namespace Domain.Customers
 
         public Address Address { get; private set; }
 
-        public bool active { get; set; }
+        public bool Active { get; set; }
     }
 }
 
