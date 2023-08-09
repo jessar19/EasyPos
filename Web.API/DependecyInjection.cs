@@ -1,6 +1,7 @@
 ﻿using System;
 using Application;
 using FluentValidation;
+using Web.Api.Middlewares;
 
 namespace Web.Api
 {
@@ -11,7 +12,7 @@ namespace Web.Api
             services.AddControllers();
             services.AddEndpointsApiExplorer();
             services.AddSwaggerGen();
-
+            services.AddTransient<GlobalExpectionHandlingMiddleware>();
             services.AddValidatorsFromAssemblyContaining<ApplicationAssemblyReference>();
             return services;
         }
